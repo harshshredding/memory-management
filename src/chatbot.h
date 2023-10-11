@@ -29,8 +29,8 @@ public:
 
     //// STUDENT CODE
     ////
-    ChatBot(const ChatBot& other); // Copy constructor (shallow)
-    ChatBot& operator=(const ChatBot& other); // copy assignment (shallow)
+    ChatBot(const ChatBot& other); // Copy constructor (shallow) should NOT be called (Move instead)
+    ChatBot& operator=(const ChatBot& other); // copy assignment (shallow) should NOT be called. (Move instead)
     ChatBot(ChatBot&& other); // move constructor 
     ChatBot& operator=(ChatBot&& other); // move assignment
     ////
